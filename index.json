@@ -1,1 +1,80 @@
-
+{
+  "format": "particle",
+  "title": "My Cool Retro Site",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "*Welcome to my corner of the digital world!*",
+      "style": {
+        "text-align": "center",
+        "margin-bottom": 40
+      }
+    },
+    {
+      "type": "image",
+      "width": 9,
+      "height": 7,
+      "pixels": "001110000 010001000 100000100 100010100 100000100 010001000 001110000",
+      "style": {
+        "scale": 3,
+        "margin-bottom": 30
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a simple website built for the Constellation Browser. Everything here is made from basic text and pixel art!"
+    },
+    {
+      "type": "list",
+      "items": [
+        "*What you'll find here:* Cool projects and random thoughts",
+        "*Why it exists:* Because retro computing is awesome",
+        "*How it works:* Pure JSON magic"
+      ]
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "blockquote",
+      "text": "Sometimes the most creative solutions come from the biggest constraints.",
+      "style": {
+        "margin-top": 25,
+        "margin-bottom": 25
+      }
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ready to explore? Check out these sections:",
+      "style": {
+        "margin-top": 30
+      }
+    },
+    {
+      "type": "button",
+      "label": "📝 My Projects",
+      "action": "/projects/"
+    },
+    {
+      "type": "button", 
+      "label": "🎮 Games & Fun",
+      "action": "/games"
+    },
+    {
+      "type": "button",
+      "label": "📬 Contact Info",
+      "action": "/contact"
+    },
+    {
+      "type": "paragraph",
+      "text": "\nThanks for visiting! This site was built with zero HTML, just pure Particle formatting.",
+      "style": {
+        "text-align": "center",
+        "margin-top": 40
+      }
+    }
+  ]
+}
