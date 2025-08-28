@@ -1,48 +1,27 @@
+---
+# YAML front matter - Jekyll processes this
+title: "Welcome to My Constellation Site"
+content:
+  - type: "paragraph"
+    text: "*Welcome to the interwebs!*"
+    style:
+      text-align: "center"
+      margin-bottom: 30
+  
+  - type: "paragraph"
+    text: "This is a dynamic site built with Jekyll!\nEach page is generated from simple YAML data."
+  
+  - type: "button"
+    label: "Visit the Pond"
+    action: "/pond/"
+  
+  - type: "separator"
+  
+  - type: "paragraph"
+    text: "This site demonstrates how to create interactive Constellation experiences using GitHub Pages."
+---
 {
   "format": "particle",
-  "title": "Sample website",
-  "content": [
-    {
-      "type": "paragraph",
-      "text": "*Welcome to the interwebs!*",
-      "style": {
-        "text-align": "center",
-        "margin-bottom": 30
-      }
-    },
-    {
-      "type": "paragraph",
-      "text": "Hello world!\nWe support line breaks *and some basic styling!*"
-    },
-    {
-      "type": "button",
-      "label": "Go to the pond folder",
-      "action": "/pond/"
-    },
-    {
-      "type": "button",
-      "label": "Go to the duck file",
-      "action": "/pond/duck"
-    },
-    {
-      "type": "paragraph",
-      "text": "The browser also supports inline images. Behold, a heart!"
-    },
-    {
-      "type": "image",
-      "width": 7,
-      "height": 7,
-      "pixels": "011011 G G G 011111 00111 0001",
-      "style": {
-        "scale": 3
-      }
-    },
-    {
-      "type": "list",
-      "items": [
-        "*Reason 1 ducks are awesome:* They cuack.",
-        "*Reason 2 ducks are awesome:* They waddle."
-      ]
-    }
-  ]
+  "title": "{{ page.title }}",
+  "content": {{ page.content | jsonify }}
 }
