@@ -1,0 +1,18 @@
+# Basic Jekyll configuration for Constellation browser
+name: "My Constellation Site"
+description: "A custom website for Playdate's Constellation browser"
+
+# This is crucial - it tells Jekyll to process .json files
+plugins:
+  - jekyll-sitemap
+
+# Configure how URLs are generated
+permalink: pretty
+
+# Set defaults for all JSON files
+defaults:
+  - scope:
+      path: "**/*.json"    # Apply to all JSON files
+    values:
+      layout: null         # Don't wrap in HTML layout
+      constellation: true  # Custom flag to identify constellation pages
